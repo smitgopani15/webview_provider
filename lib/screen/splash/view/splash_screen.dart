@@ -21,25 +21,46 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Scaffold(
         backgroundColor: Colors.black,
         body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Stack(
             children: [
-              Text(
-                "allin",
-                style: TextStyle(
-                  color: Colors.white,
-                  letterSpacing: 1,
-                  fontSize: 40,
-                  fontWeight: FontWeight.w400,
+              Align(
+                alignment: Alignment.center,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "allin",
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 1,
+                        fontSize: 40,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    Text(
+                      "One",
+                      style: TextStyle(
+                        color: Colors.blue,
+                        letterSpacing: 1,
+                        fontSize: 50,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              Text(
-                "One",
-                style: TextStyle(
-                  color: Colors.blue,
-                  letterSpacing: 1,
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Padding(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    "same UI like Akhil but not copied !",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 ),
               ),
             ],
