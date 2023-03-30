@@ -17,7 +17,6 @@ void main() {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/',
         routes: {
           '/': (context) => SplashScreen(),
           'home_screen': (context) => HomeScreen(),
